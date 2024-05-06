@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOUCH Community</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.6.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.6.2/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+    <!-- Navbar Section -->
+    <div class="header">
+        <nav class="navbar navbar-expand-sm sticky-top">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/Logo.png" alt="logo" style="width:100px;" class="logo">
+            </a>
+            <div class="nav-items" style="display: none;">
+                <a class="nav-item active nav-mobile-item" href="index.html#home"><i class='bx bx-home'></i> Home</a>
+                <a class="nav-item nav-mobile-item" href="index.html#about"><i class='bx bx-user'></i> About Me</a>
+                <!-- Portfolio Dropdown -->
+                <div class="dropdown">
+                    <a class="nav-item portfolio-trigger nav-mobile-item" href="#"><i class='bx bx-envelope'></i>
+                        Portfolio</a>
+                    <div class="dropdown-content">
+                        <a href="design.html">Design</a>
+                        <a href="development.html">Development</a>
+                        <a href="VR.html">VR</a>
+                    </div>
+                </div>
+                <a class="nav-item nav-mobile-item" href="index.html#contact"><i class='bx bx-phone'></i> Contact</a>
+            </div>
+            <div class="nav-item hamburger"><i class='bx bx-menu'></i></div>
+        </nav>
+    </div>
+    
+    <div class="portfolio-iconTop">
+        <a href="design.html"><i class='bx bx-left-arrow-alt'></i></a>
+    </div>
+
+
+    <section class="video">
+        <video autoplay muted loop>
+            <source src="images/touch.mp4" type="video/mp4">
+        </video>
+    </section>
+
+    <!-- Overlay Container -->
+    <div id="imageOverlay" class="overlay">
+        <span class="close-btn" onclick="closeOverlay()">&times;</span>
+        <img id="expandedImage" class="expanded-image">
+    </div>
+
+    <section class="works">
+        <div class="content-container">
+            <div class="images-container">
+                <h1>Logo Design</h1>
+                <br>
+                <img src="images/touch.png" alt="touch" style="width: 250px;">
+                <br><br>
+                <h1>Web-Pages - Click to expand -</h1>
+                <br>
+                <a href="javascript:void(0);" onclick="expandImage('images/touch1.png')">
+                    <img src="images/touch1.png" alt="touch" style="width: 450px;">
+                </a>
+                <br><br>
+                <a href="javascript:void(0);" onclick="expandImage('images/touch2.png')">
+                    <img src="images/touch2.png" alt="touch" style="width: 450px;">
+                </a>
+            </div>
+            <br>
+            <div class="description">
+                <h2>TOUCH Community</h2>
+                <p>
+                    This mobile app was created to enhance the well-being, connectivity and independence of the elders.
+                    To engage them in different activities to upskill their knowledge and interests in current relevant
+                    topics.
+                    The app aims to provide a platform for the elders where they can explore and learn new skills, and
+                    expand their knowledge base. With the fun activities that are simple yet interesting to keep the
+                    senior citizens engaged in them, the app seeks to empower the elders to embrace a lifelong learning
+                    attitude.
+                    <br><br>
+                    To connect with the elders through ElderConnect, we aim for a simplicity, yet visually pleasing
+                    approach to design the app, as keeping the app easy to understand helps the elders to navigate
+                    around as most elders are not familiar with technology, hence, having instructions and simple
+                    recognisable icons is vital. In addition, making the app visually interesting helps enhance the
+                    overall visual appearance of the app and the user experience of it as well since factors such as
+                    typography, colour palettes etc. all comes in to place to work together to make the app nice.
+                    <br><br>
+                    All in all, we aim to engage them with a new idea and using our app also teaches them about current
+                    technology. Once they have tried our app, we hope to receive feedbacks from them on how they felt
+                    using the app, such as their experience, setbacks or any other remarks they might have for us to
+                    improve in future.
+
+                </p>
+                <br>
+                <h3>Color Scheme</h3>
+                <p>
+                    <span class="colorBox" style="background:#707070;" data-color="#707070"></span>
+                    <span class="colorBox" style="background:#326273;" data-color="#326273"></span>
+                    <span class="colorBox" style="background:#EFEFEF;" data-color="#EFEFEF"></span>
+                    <span class="colorBox" style="background:#FFFFFF;" data-color="#FFFFFF"></span><br>
+                </p>
+                <br>
+                <h3>Typography</h3>
+                <p>
+                    Lucida Sans Regular & DemiBold Roman. I used Lucida Sans Regular for the contents and description of
+                    my
+                    pages,
+                    while Lucida Sans DemiBold Roman for the headings and sub-headings. I chose to use Lucida Sans as it
+                    provides
+                    clear and simple letters making it easy to read on digital screens. It also has a
+                    modern and minimalist feel which adds to the design and having the use of Lucida Sans Regular &
+                    DemiBold Roman
+                    provides a clear hierarchy as it helps to organise the information on a page to guide my reader's
+                    eyes through
+                    the difference level of importance.
+                </p>
+                <br><br>
+                <a href="https://xd.adobe.com/view/a7925b07-8d71-42a7-bae6-2232e6f67bf2-f2c1/" class="btn">Go to
+                    Prototype</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="logo-container">
+                <img src="images/Logo.png" alt="logo" style="width:100px;">
+            </div>
+            <div class="social-section">
+                <h4 class="social-text">Socials:</h4>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/nilplayz/?hl=en"><i class='bx bxl-instagram'></i></a>
+                    <a href="https://web.telegram.org/a/#nniilzz"><i class='bx bxl-telegram'></i></a>
+                    <a href="https://api.whatsapp.com/send/?phone=%2B90716235&text&type=phone_number&app_absent=0"><i
+                            class='bx bxl-whatsapp'></i></a>
+                    <a href="https://mail.google.com/mail/u/0/?hl=en#inbox?compose=new"><i
+                            class='bx bx-envelope'></i></a>
+                    <a href="#"><i class='bx bxl-linkedin'></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-content">
+            <h4>Home</h4>
+            <ul>
+                <li><a href="index.html#home">Intro</a></li>
+            </ul>
+        </div>
+        <div class="footer-content">
+            <h4>About Me</h4>
+            <ul>
+                <li><a href="index.html#about">My Life</a></li>
+            </ul>
+        </div>
+        <div class="footer-content">
+            <h4>Portfolio</h4>
+            <ul>
+                <li><a href="design.html">Design</a></li>
+                <li><a href="development.html">Development</a></li>
+                <li><a href="vr.html">Virtual Reality</a></li>
+            </ul>
+        </div>
+        <div class="footer-content">
+            <h4>Contact</h4>
+            <ul>
+                <li><a href="index.html#contact">Socials</a></li>
+                <li><a href="index.html#contact">Contact Form</a></li>
+            </ul>
+        </div>
+        <div class="footer-iconTop">
+            <a href="touch.html"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+        <div class="copyright">
+            <p>Copyright © nicholas leong.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

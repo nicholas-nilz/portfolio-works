@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Works</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.6.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.6.2/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+    <!-- Navbar Section -->
+    <div class="header">
+        <nav class="navbar navbar-expand-sm sticky-top">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/Logo.png" alt="logo" style="width:100px;" class="logo">
+            </a>
+            <div class="nav-items" style="display: none;">
+                <a class="nav-item active nav-mobile-item" href="index.html#home"><i class='bx bx-home'></i> Home</a>
+                <a class="nav-item nav-mobile-item" href="index.html#about"><i class='bx bx-user'></i> About Me</a>
+                <!-- Portfolio Dropdown -->
+                <div class="dropdown">
+                    <a class="nav-item portfolio-trigger nav-mobile-item" href="#"><i class='bx bx-envelope'></i>
+                        Portfolio</a>
+                    <div class="dropdown-content">
+                        <a href="design.html">Design</a>
+                        <a href="development.html">Development</a>
+                        <a href="VR.html">VR</a>
+                    </div>
+                </div>
+                <a class="nav-item nav-mobile-item" href="index.html#contact"><i class='bx bx-phone'></i> Contact</a>
+            </div>
+            <div class="nav-item hamburger"><i class='bx bx-menu'></i></div>
+        </nav>
+    </div>
+
+    <div class="portfolio-iconTop">
+        <a href="design.html"><i class='bx bx-left-arrow-alt'></i></a>
+    </div>
+
+
+    <section class="video">
+        <video autoplay muted loop>
+            <source src="images/personal.mp4" type="video/mp4">
+        </video>
+    </section>
+    <br><br>
+
+    <!-- Overlay Container -->
+    <div id="imageOverlay" class="overlay">
+        <span class="close-btn" onclick="closeOverlay()">&times;</span>
+        <img id="expandedImage" class="expanded-image">
+    </div>
+
+    <section class="works">
+        <div class="content-container">
+            <div class="images-container">
+                <h1>- Click to expand -</h1>
+                <br>
+                <a href="javascript:void(0);" onclick="expandImage('images/work1.JPEG')">
+                    <img src="images/work1.JPEG" alt="art" style="width: 350px;">
+                </a>
+                <br><br>
+                <a href="javascript:void(0);" onclick="expandImage('images/work2.JPEG')">
+                    <img src="images/work2.JPEG" alt="art" style="width: 350px;">
+                </a>
+                <br><br>
+                <a href="javascript:void(0);" onclick="expandImage('images/work3.JPEG')">
+                    <img src="images/work3.JPEG" alt="art" style="width: 350px;">
+                </a>
+                <br><br>
+                <a href="javascript:void(0);" onclick="expandImage('images/work4.JPEG')">
+                    <img src="images/work4.JPEG" alt="art" style="width: 350px;">
+                </a>
+                <br><br>
+                <a href="javascript:void(0);" onclick="expandImage('images/work5.JPEG')">
+                    <img src="images/work5.JPEG" alt="art" style="width: 350px;">
+                </a>
+                <br><br>
+                <a href="javascript:void(0);" onclick="expandImage('images/work6.JPEG')">
+                    <img src="images/work6.JPEG" alt="art" style="width: 350px;">
+                </a>
+                <br><br>
+                <a href="javascript:void(0);" onclick="expandImage('images/work7.JPEG')">
+                    <img src="images/work7.JPEG" alt="art" style="width: 350px;">
+                </a>
+                <br><br>
+                <a href="javascript:void(0);" onclick="expandImage('images/work8.JPEG')">
+                    <img src="images/work8.JPEG" alt="art" style="width: 350px;">
+                </a>
+                <br><br>
+                <a href="javascript:void(0);" onclick="expandImage('images/work9.JPEG')">
+                    <img src="images/work9.JPEG" alt="art" style="width: 350px;">
+                </a>
+            </div>
+            <br>
+            <div class="description">
+                <h2>Aromatics</h2>
+                <p>
+                    This was my work back in 2021 that I did for O levels. I chose the topic "Aromatics" as I have a
+                    passion to learn and differentiate scents of perfumes in my free time, hence, with this fascination
+                    with scents, I feel that in the current age, male confidence can come from his cologne. Thus, I used
+                    my art to show how I seek my identity and confidence from the fragrances I wear.
+                    <br><br>
+                    My final work canvas was in a shape of a perfume bottle, and since confidence is associated with the
+                    colour "Blue",
+                    I decided on a blue colour scheme moodboard as the background and to fill it with all of the things
+                    I like that are blue as well to show my identity as an individual.
+                    <br><br>
+                    The biggest portrait in the canvas is to show the confidence and masculinity when a male individual
+                    were to wear scents, hence, pairing it with the formal look of suit and makeup to enhance the
+                    meaning. The two
+                    smaller portraits at the top-right hand corner is to show how an individual is different when
+                    wearing scents and when they are not wearing. Therefore, the first smaller portrait is in a relaxed
+                    fit to show myself in my daily life, while the bottom portrait is more formal to represent that
+                    scents do make an individual more confident in themselves.
+                </p>
+                <br>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="logo-container">
+                <img src="images/Logo.png" alt="logo" style="width:100px;">
+            </div>
+            <div class="social-section">
+                <h4 class="social-text">Socials:</h4>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/nilplayz/?hl=en"><i class='bx bxl-instagram'></i></a>
+                    <a href="https://web.telegram.org/a/#nniilzz"><i class='bx bxl-telegram'></i></a>
+                    <a href="https://api.whatsapp.com/send/?phone=%2B90716235&text&type=phone_number&app_absent=0"><i
+                            class='bx bxl-whatsapp'></i></a>
+                    <a href="https://mail.google.com/mail/u/0/?hl=en#inbox?compose=new"><i
+                            class='bx bx-envelope'></i></a>
+                    <a href="https://www.linkedin.com/in/nicholas-leong-7aa6a9244/"><i class='bx bxl-linkedin'></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-content">
+            <h4>Home</h4>
+            <ul>
+                <li><a href="index.html#home">Intro</a></li>
+            </ul>
+        </div>
+        <div class="footer-content">
+            <h4>About Me</h4>
+            <ul>
+                <li><a href="index.html#about">My Life</a></li>
+            </ul>
+        </div>
+        <div class="footer-content">
+            <h4>Portfolio</h4>
+            <ul>
+                <li><a href="design.html">Design</a></li>
+                <li><a href="development.html">Development</a></li>
+                <li><a href="vr.html">Virtual Reality</a></li>
+            </ul>
+        </div>
+        <div class="footer-content">
+            <h4>Contact</h4>
+            <ul>
+                <li><a href="index.html#contact">Socials</a></li>
+                <li><a href="index.html#contact">Contact Form</a></li>
+            </ul>
+        </div>
+        <div class="footer-iconTop">
+            <a href="others.html"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+        <div class="copyright">
+            <p>Copyright © nicholas leong.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

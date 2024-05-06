@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alphabet Fonts</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.6.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.6.2/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+    <!-- Navbar Section -->
+    <div class="header">
+        <nav class="navbar navbar-expand-sm sticky-top">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/Logo.png" alt="logo" style="width:100px;" class="logo">
+            </a>
+            <div class="nav-items" style="display: none;">
+                <a class="nav-item active nav-mobile-item" href="index.html#home"><i class='bx bx-home'></i> Home</a>
+                <a class="nav-item nav-mobile-item" href="index.html#about"><i class='bx bx-user'></i> About Me</a>
+                <!-- Portfolio Dropdown -->
+                <div class="dropdown">
+                    <a class="nav-item portfolio-trigger nav-mobile-item" href="#"><i class='bx bx-envelope'></i>
+                        Portfolio</a>
+                    <div class="dropdown-content">
+                        <a href="design.html">Design</a>
+                        <a href="development.html">Development</a>
+                        <a href="VR.html">VR</a>
+                    </div>
+                </div>
+                <a class="nav-item nav-mobile-item" href="index.html#contact"><i class='bx bx-phone'></i> Contact</a>
+            </div>
+            <div class="nav-item hamburger"><i class='bx bx-menu'></i></div>
+        </nav>
+    </div>
+    
+    <div class="portfolio-iconTop">
+        <a href="design.html"><i class='bx bx-left-arrow-alt'></i></a>
+    </div>
+
+    <!-- Overlay Container -->
+    <div id="imageOverlay" class="overlay">
+        <span class="close-btn" onclick="closeOverlay()">&times;</span>
+        <img id="expandedImage" class="expanded-image">
+    </div>
+
+    <section class="works">
+        <div class="content-container">
+            <div class="images-container">
+                <h1>- Click to expand -</h1>
+                <br>
+                <a href="javascript:void(0);" onclick="expandImage('images/font.png')">
+                    <img src="images/font.png" alt="font" style="width: 450px;">
+                </a>
+            </div>
+            <br>
+            <div class="description">
+                <h2>Alphabet Fonts</h2>
+                <p>
+                    The style of the alphabets that I chose to integrate my design with is bubble texts as I feel that
+                    bubble texts gives a lively and peaceful vibe which goes well with the overall pastel colour theme I
+                    chose for my design. This is because pastel colours are usually created from other colours, hence,
+                    they are very flexible and versatile in terms of going well with other colours to match the
+                    resulting colour scheme.
+                    <br><br>
+                    With pastels, one aspect of the colour scheme is that it brings a whole new
+                    depth and element to the colour that they derive from, thus, it makes it easy and pleasing for
+                    audience to bring their attention to the design as pastel colours lack the hues and saturation from
+                    normal saturated colours that are usually very striking. I chose to use analogous as it involves
+                    using three colours being next to one another and in this case, green, blues and indigo. These
+                    colours gives off a soft and soothing look to the overall design which I wanted as bubble letters
+                    are usually giving a playful and cheerful feeling to the work. Therefore, using the colours which
+                    are welcoming and subdued contrasts the lively characteristics of the design.
+                    <br><br>
+                    Working with complementary colours, they help to increase the look of the overall design as they not
+                    only pair
+                    well with one another, but it creates contrasts as one colour will be lighter than the other. In
+                    this case, the colours used were blues and browns as the blues stands out as the cool and light
+                    colour contrasts the dull brownish tones.
+                </p>
+                <br>
+            </div>
+        </div>
+    </section>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="footer-content">
+        <div class="logo-container">
+            <img src="images/Logo.png" alt="logo" style="width:100px;">
+        </div>
+        <div class="social-section">
+            <h4 class="social-text">Socials:</h4>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/nilplayz/?hl=en"><i class='bx bxl-instagram'></i></a>
+                <a href="https://web.telegram.org/a/#nniilzz"><i class='bx bxl-telegram'></i></a>
+                <a href="https://api.whatsapp.com/send/?phone=%2B90716235&text&type=phone_number&app_absent=0"><i
+                        class='bx bxl-whatsapp'></i></a>
+                <a href="https://mail.google.com/mail/u/0/?hl=en#inbox?compose=new"><i
+                        class='bx bx-envelope'></i></a>
+                <a href="https://www.linkedin.com/in/nicholas-leong-7aa6a9244/"><i class='bx bxl-linkedin'></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-content">
+        <h4>Home</h4>
+        <ul>
+            <li><a href="index.html#home">Intro</a></li>
+        </ul>
+    </div>
+    <div class="footer-content">
+        <h4>About Me</h4>
+        <ul>
+            <li><a href="index.html#about">My Life</a></li>
+        </ul>
+    </div>
+    <div class="footer-content">
+        <h4>Portfolio</h4>
+        <ul>
+            <li><a href="design.html">Design</a></li>
+            <li><a href="development.html">Development</a></li>
+            <li><a href="vr.html">Virtual Reality</a></li>
+        </ul>
+    </div>
+    <div class="footer-content">
+        <h4>Contact</h4>
+        <ul>
+            <li><a href="index.html#contact">Socials</a></li>
+            <li><a href="index.html#contact">Contact Form</a></li>
+        </ul>
+    </div>
+    <div class="footer-iconTop">
+        <a href="font.html"><i class='bx bx-up-arrow-alt'></i></a>
+    </div>
+    <div class="copyright">
+        <p>Copyright © nicholas leong.</p>
+    </div>
+</footer>
+</body>
+
+</html>

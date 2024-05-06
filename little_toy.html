@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Little Toy Kingdom</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.6.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.6.2/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+    <!-- Navbar Section -->
+    <div class="header">
+        <nav class="navbar navbar-expand-sm sticky-top">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/Logo.png" alt="logo" style="width:100px;" class="logo">
+            </a>
+            <div class="nav-items" style="display: none;">
+                <a class="nav-item active nav-mobile-item" href="index.html#home"><i class='bx bx-home'></i> Home</a>
+                <a class="nav-item nav-mobile-item" href="index.html#about"><i class='bx bx-user'></i> About Me</a>
+                <!-- Portfolio Dropdown -->
+                <div class="dropdown">
+                    <a class="nav-item portfolio-trigger nav-mobile-item" href="#"><i class='bx bx-envelope'></i>
+                        Portfolio</a>
+                    <div class="dropdown-content">
+                        <a href="design.html">Design</a>
+                        <a href="development.html">Development</a>
+                        <a href="VR.html">VR</a>
+                    </div>
+                </div>
+                <a class="nav-item nav-mobile-item" href="index.html#contact"><i class='bx bx-phone'></i> Contact</a>
+            </div>
+            <div class="nav-item hamburger"><i class='bx bx-menu'></i></div>
+        </nav>
+    </div>
+
+    <div class="portfolio-iconTop">
+        <a href="development.html"><i class='bx bx-left-arrow-alt'></i></a>
+    </div>
+
+
+    <section class="video">
+        <video autoplay muted loop>
+            <source src="images/toy_video.mp4" type="video/mp4">
+        </video>
+    </section>
+
+    <!-- Overlay Container -->
+    <div id="imageOverlay" class="overlay">
+        <span class="close-btn" onclick="closeOverlay()">&times;</span>
+        <img id="expandedImage" class="expanded-image">
+    </div>
+
+    <section class="works">
+        <div class="content-container">
+            <div class="images-container">
+                <h1>Logo Design</h1>
+                <br>
+                <img src="images/toy.png" alt="toy" style="width: 250px;">
+                <br><br>
+                <h1>Web-Pages - Click to expand -</h1>
+                <br>
+                <a href="javascript:void(0);" onclick="expandImage('images/toy_pages.png')">
+                    <img src="images/toy_pages.png" alt="toy" style="width: 450px;">
+                </a>
+            </div>
+            <br>
+            <div class="description">
+                <h2>Little Toy Kingdom</h2>
+                <p>
+                    Little Toy Kingdom's website is a toy shop that caters to children of all ages.
+                    With a user-friendly interface and captivating design, the website offers a wide range of toys
+                    for babies, boys, and girls.<br><br>
+
+                    The website features a comprehensive selection of web pages, such as the Home page, which serves as
+                    a
+                    welcoming gateway to the world of Little Toy Kingdom. The Shop page offers a seamless shopping
+                    experience, allowing customers to browse and purchase their favorite toys effortlessly. The Babies,
+                    Boys, and Girls pages showcase a curated collection of toys specifically tailored to different age
+                    groups and gender preferences.<br><br>
+
+                    With its vibrant and child-friendly design, Little Toy Kingdom's website aims to inspire joy, foster
+                    imagination, and become the go-to online destination for parents and children alike where they will
+                    find
+                    little wonders that awaits for them.
+                </p>
+                <br>
+                <h3>Color Scheme</h3>
+                <p>
+                    <span class="colorBox" style="background:#CCFBFE;" data-color="#CCFBFE"></span>
+                    <span class="colorBox" style="background:#CD8987;" data-color="#CD8987"></span>
+                    <span class="colorBox" style="background:#CDACA1;" data-color="#CDACA1"></span>
+                    <span class="colorBox" style="background:#333333;" data-color="#333333"></span>
+                    <span class="colorBox" style="background:#FFFFFF;" data-color="#FFFFFF"></span><br>
+                </p>
+                <br>
+                <h3>Typography</h3>
+                <p>
+                    Montserrat Regular & Semibold. I used Montserrat Regular for the contents and description of my
+                    pages,
+                    while Montserrat Semibold for the headings and sub-headings. I chose to use Montserrat as it
+                    provides
+                    clear and simple letters making it easy to read on digital screens. It also has a
+                    modern and minimalist feel which adds to the design and having the use of Montserrat Regular and
+                    Semibold
+                    provides a clear hierarchy as it helps to organise the information on a page to guide my reader's
+                    eyes through
+                    the difference level of importance.
+                </p>
+                <br><br>
+                <a href="https://xd.adobe.com/view/2e72e9d9-cff7-45e1-bd62-c6f82e7f3917-7b21/" class="btn">Go to
+                    Prototype</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="logo-container">
+                <img src="images/Logo.png" alt="logo" style="width:100px;">
+            </div>
+            <div class="social-section">
+                <h4 class="social-text">Socials:</h4>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/nilplayz/?hl=en"><i class='bx bxl-instagram'></i></a>
+                    <a href="https://web.telegram.org/a/#nniilzz"><i class='bx bxl-telegram'></i></a>
+                    <a href="https://api.whatsapp.com/send/?phone=%2B90716235&text&type=phone_number&app_absent=0"><i
+                            class='bx bxl-whatsapp'></i></a>
+                    <a href="https://mail.google.com/mail/u/0/?hl=en#inbox?compose=new"><i
+                            class='bx bx-envelope'></i></a>
+                    <a href="https://www.linkedin.com/in/nicholas-leong-7aa6a9244/"><i class='bx bxl-linkedin'></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-content">
+            <h4>Home</h4>
+            <ul>
+                <li><a href="index.html#home">Intro</a></li>
+            </ul>
+        </div>
+        <div class="footer-content">
+            <h4>About Me</h4>
+            <ul>
+                <li><a href="index.html#about">My Life</a></li>
+            </ul>
+        </div>
+        <div class="footer-content">
+            <h4>Portfolio</h4>
+            <ul>
+                <li><a href="design.html">Design</a></li>
+                <li><a href="development.html">Development</a></li>
+                <li><a href="vr.html">Virtual Reality</a></li>
+            </ul>
+        </div>
+        <div class="footer-content">
+            <h4>Contact</h4>
+            <ul>
+                <li><a href="index.html#contact">Socials</a></li>
+                <li><a href="index.html#contact">Contact Form</a></li>
+            </ul>
+        </div>
+        <div class="footer-iconTop">
+            <a href="little_toy.html"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+        <div class="copyright">
+            <p>Copyright © nicholas leong.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
