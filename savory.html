@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SavoryFlight</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.6.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.6.2/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+    <!-- Navbar Section -->
+    <div class="header">
+        <nav class="navbar navbar-expand-sm sticky-top">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/Logo.png" alt="logo" style="width:100px;" class="logo">
+            </a>
+            <div class="nav-items" style="display: none;">
+                <a class="nav-item active nav-mobile-item" href="index.html#home"><i class='bx bx-home'></i> Home</a>
+                <a class="nav-item nav-mobile-item" href="index.html#about"><i class='bx bx-user'></i> About Me</a>
+                <!-- Portfolio Dropdown -->
+                <div class="dropdown">
+                    <a class="nav-item portfolio-trigger nav-mobile-item" href="#"><i class='bx bx-envelope'></i>
+                        Portfolio</a>
+                    <div class="dropdown-content">
+                        <a href="design.html">Design</a>
+                        <a href="development.html">Development</a>
+                        <a href="VR.html">VR</a>
+                    </div>
+                </div>
+                <a class="nav-item nav-mobile-item" href="index.html#contact"><i class='bx bx-phone'></i> Contact</a>
+            </div>
+            <div class="nav-item hamburger"><i class='bx bx-menu'></i></div>
+        </nav>
+    </div>
+
+    <div class="portfolio-iconTop">
+        <a href="design.html"><i class='bx bx-left-arrow-alt'></i></a>
+    </div>
+
+
+    <section class="video">
+        <video autoplay muted loop>
+            <source src="images/savory.mp4" type="video/mp4">
+        </video>
+    </section>
+
+    <!-- Overlay Container -->
+    <div id="imageOverlay" class="overlay">
+        <span class="close-btn" onclick="closeOverlay()">&times;</span>
+        <img id="expandedImage" class="expanded-image">
+    </div>
+
+    <section class="works">
+        <div class="content-container">
+            <div class="images-container">
+                <h1>Logo Design</h1>
+                <br>
+                <img src="images/savory.png" alt="savory" style="width: 250px;">
+                <br><br>
+                <h1>Web-Pages - Click to expand -</h1>
+                <br>
+                <a href="javascript:void(0);" onclick="expandImage('images/savory1.png')">
+                    <img src="images/savory1.png" alt="savory" style="width: 450px;">
+                </a>
+                <br><br>
+                <a href="javascript:void(0);" onclick="expandImage('images/savory2.png')">
+                    <img src="images/savory2.png" alt="savory" style="width: 450px;">
+                </a>
+            </div>
+            <br>
+            <div class="description">
+                <h2>SavoryFlight</h2>
+                <p>
+                    This app was created with the purpose to enhance the Singapore Airline travel experience by
+                    providing passengers
+                    with a personalized and diverse range of food options that cater to different dietary requirements,
+                    allergies, and preferences. The app aims to bridge the gap in the traditional airline meal selection
+                    by offering a broader and more inclusive range of food choices.
+                    <br><br>
+                    The target audience includes airline passengers who have dietary restrictions, allergies, or
+                    specific food preferences. This encompasses individuals with gluten intolerance, lactose
+                    intolerance, vegetarians, vegans, and other special dietary needs. In addition to that, the app
+                    caters to travelers looking for unique and diverse food options during their flights.
+                    <br><br>
+                    Some apps that are currently available in the market, “Airline Meal Allergy Tracker” and “In-flight
+                    Cuisine Guide”. The strengths of “Airline Meal Allergy Tracker” includes helping passenger track
+                    their allergies and dietary restrictions when ordering meals during flights. However, it lacks in
+                    broad range of food choices and options for travelers with various preferences.
+                    <br><br>
+                    The design gap SavoryFlight aims to bridge is the lack of diverse and inclusive food options for
+                    airline passengers, especially for Singapore Airline. It aims to go beyond the standard meal choices
+                    by providing a comprehensive selection that caters to different dietary restrictions, allergies, and
+                    preferences, ensuring an enjoyable and worry-free dining experiences for those traveling in and out
+                    of Singapore.
+                    <br><br>
+                    <b>Features of SavoryFlight</b><br>
+                    Personalized Meal Selection - Passengers can input their dietary preferences and allergies to
+                    receive personalized meal suggestions for their flight.
+                    <br><br>
+                    Meal Reviews and Ratings - User can leave reviews and ratings for the meals they have tried, helping
+                    others make informed choices.
+                    <br><br>
+                    Special Requests - Passengers can make special requests for unique dietary needs, providing the
+                    airline with advance notice for meal preparation.
+                    <br><br>
+                    Allergy and Dietary Filters - Allows users to filter meal options based on specific allergies or
+                    dietary needs, such as gluten-free, lactose-free, vegetarian, etc.
+                </p>
+                <br>
+                <h3>Color Scheme</h3>
+                <p>
+                    <span class="colorBox" style="background:#FFFEFE;" data-color="#FFFEFE"></span>
+                    <span class="colorBox" style="background:#0B132B;" data-color="#0B132B"></span>
+                    <span class="colorBox" style="background:#5BC0BE;" data-color="#5BC0BE"></span>
+                    <span class="colorBox" style="background:#44689B;" data-color="#44689B"></span>
+                    <span class="colorBox" style="background:#EDF0F2;" data-color="#EDF0F2"></span>
+                    <span class="colorBox" style="background:#FFAE42;" data-color="#FFAE42"></span><br>
+                </p>
+                <br>
+                <h3>Typography</h3>
+                <p>
+                    Specter as the main font and Montserrat as the secondary font. The combination of these two fonts
+                    were chosen for their contrasting yet harmonious qualities. Specter offers a unique and distinctive
+                    appearance with its features, while Montserrat could provide clarity and readability as a secondary
+                    font. In this case, Specter is used for headings and larger text due to its bold and impactful
+                    design, which can definitely help establish hierarchy and grab attention. Montserrat, being more
+                    neutral, could then be used for body text, ensuring comfortable reading for our users.
+                    <br><br>
+                    In addition to the classy feels, the pairing of a modern, bold font like Specter with a classic and
+                    timeless font like Montserrat can create a balanced and contemporary design aesthetic. Furthermore,
+                    the fonts could work well across various devices and screen sizes due to their design
+                    characteristics.
+
+                </p>
+                <br><br>
+                <a href="https://xd.adobe.com/view/98d822ae-ad5d-4a49-b295-fef7cbf9733e-cd8b/" class="btn">Go to
+                    Prototype</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="logo-container">
+                <img src="images/Logo.png" alt="logo" style="width:100px;">
+            </div>
+            <div class="social-section">
+                <h4 class="social-text">Socials:</h4>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/nilplayz/?hl=en"><i class='bx bxl-instagram'></i></a>
+                    <a href="https://web.telegram.org/a/#nniilzz"><i class='bx bxl-telegram'></i></a>
+                    <a href="https://api.whatsapp.com/send/?phone=%2B90716235&text&type=phone_number&app_absent=0"><i
+                            class='bx bxl-whatsapp'></i></a>
+                    <a href="https://mail.google.com/mail/u/0/?hl=en#inbox?compose=new"><i
+                            class='bx bx-envelope'></i></a>
+                    <a href="https://www.linkedin.com/in/nicholas-leong-7aa6a9244/"><i class='bx bxl-linkedin'></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-content">
+            <h4>Home</h4>
+            <ul>
+                <li><a href="index.html#home">Intro</a></li>
+            </ul>
+        </div>
+        <div class="footer-content">
+            <h4>About Me</h4>
+            <ul>
+                <li><a href="index.html#about">My Life</a></li>
+            </ul>
+        </div>
+        <div class="footer-content">
+            <h4>Portfolio</h4>
+            <ul>
+                <li><a href="design.html">Design</a></li>
+                <li><a href="development.html">Development</a></li>
+                <li><a href="vr.html">Virtual Reality</a></li>
+            </ul>
+        </div>
+        <div class="footer-content">
+            <h4>Contact</h4>
+            <ul>
+                <li><a href="index.html#contact">Socials</a></li>
+                <li><a href="index.html#contact">Contact Form</a></li>
+            </ul>
+        </div>
+        <div class="footer-iconTop">
+            <a href="savory.html"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+        <div class="copyright">
+            <p>Copyright © nicholas leong.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poster</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.6.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.6.2/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+    <!-- Navbar Section -->
+    <div class="header">
+        <nav class="navbar navbar-expand-sm sticky-top">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/Logo.png" alt="logo" style="width:100px;" class="logo">
+            </a>
+            <div class="nav-items" style="display: none;">
+                <a class="nav-item active nav-mobile-item" href="index.html#home"><i class='bx bx-home'></i> Home</a>
+                <a class="nav-item nav-mobile-item" href="index.html#about"><i class='bx bx-user'></i> About Me</a>
+                <!-- Portfolio Dropdown -->
+                <div class="dropdown">
+                    <a class="nav-item portfolio-trigger nav-mobile-item" href="#"><i class='bx bx-envelope'></i>
+                        Portfolio</a>
+                    <div class="dropdown-content">
+                        <a href="design.html">Design</a>
+                        <a href="development.html">Development</a>
+                        <a href="VR.html">VR</a>
+                    </div>
+                </div>
+                <a class="nav-item nav-mobile-item" href="index.html#contact"><i class='bx bx-phone'></i> Contact</a>
+            </div>
+            <div class="nav-item hamburger"><i class='bx bx-menu'></i></div>
+        </nav>
+    </div>
+
+    <div class="portfolio-iconTop">
+        <a href="design.html"><i class='bx bx-left-arrow-alt'></i></a>
+    </div>
+
+    <!-- Overlay Container -->
+    <div id="imageOverlay" class="overlay">
+        <span class="close-btn" onclick="closeOverlay()">&times;</span>
+        <img id="expandedImage" class="expanded-image">
+    </div>
+
+    <section class="works">
+        <div class="content-container">
+            <div class="images-container">
+                <h1>- Click to expand -</h1>
+                <br>
+                <a href="javascript:void(0);" onclick="expandImage('images/poster.png')">
+                    <img src="images/poster.png" alt="poster" style="width: 500px;">
+                </a>
+            </div>
+            <br>
+            <div class="description">
+                <h2>Poster</h2>
+                <p>
+                    I designed this poster with the idea of wanting to create a
+                    poster that promotes newly launched drinks. Considering the logo design is a bubble tea
+                    brand, I came up with the concept of a poster that would promote two new drinks related to
+                    one another, hence, the “Fruity Season” drinks. I chose mango and raspberry as both are
+                    refreshing drinks which will entice customers to want to give the drinks a try.
+                </p>
+                <br>
+                <h3>Color Scheme</h3>
+                <p>
+                    <span class="colorBox" style="background:#C8A86D;" data-color="#C8A86D"></span>
+                    <span class="colorBox" style="background:#9C1633;" data-color="#9C1633"></span>
+                    <span class="colorBox" style="background:#FDD933;" data-color="#FDD933"></span>
+                    <span class="colorBox" style="background:#E7686D;" data-color="#E7686D"></span>
+                    <span class="colorBox" style="background:#000000;" data-color="#000000"></span><br>
+                </p>
+                <br>
+                <h3>Typography</h3>
+                <p>
+                    Lucida Sans Regular & Brittanic Bold. I used Lucida Sans Regular for the contents and description of
+                    my pages, while Brittanic Bold for the headings and sub-headings. I chose to use Lucida Sans as it
+                    provides clear and simple letters making it easy to read on digital screens. It also has a
+                    modern and minimalist feel which adds to the design and having the use of Lucida Sans Regular &
+                    DemiBold Roman provides a clear hierarchy as it helps to organise the information on a page to guide
+                    my reader's
+                    eyes through the difference level of importance.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="logo-container">
+                <img src="images/Logo.png" alt="logo" style="width:100px;">
+            </div>
+            <div class="social-section">
+                <h4 class="social-text">Socials:</h4>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/nilplayz/?hl=en"><i class='bx bxl-instagram'></i></a>
+                    <a href="https://web.telegram.org/a/#nniilzz"><i class='bx bxl-telegram'></i></a>
+                    <a href="https://api.whatsapp.com/send/?phone=%2B90716235&text&type=phone_number&app_absent=0"><i
+                            class='bx bxl-whatsapp'></i></a>
+                    <a href="https://mail.google.com/mail/u/0/?hl=en#inbox?compose=new"><i
+                            class='bx bx-envelope'></i></a>
+                    <a href="https://www.linkedin.com/in/nicholas-leong-7aa6a9244/"><i class='bx bxl-linkedin'></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-content">
+            <h4>Home</h4>
+            <ul>
+                <li><a href="index.html#home">Intro</a></li>
+            </ul>
+        </div>
+        <div class="footer-content">
+            <h4>About Me</h4>
+            <ul>
+                <li><a href="index.html#about">My Life</a></li>
+            </ul>
+        </div>
+        <div class="footer-content">
+            <h4>Portfolio</h4>
+            <ul>
+                <li><a href="design.html">Design</a></li>
+                <li><a href="development.html">Development</a></li>
+                <li><a href="vr.html">Virtual Reality</a></li>
+            </ul>
+        </div>
+        <div class="footer-content">
+            <h4>Contact</h4>
+            <ul>
+                <li><a href="index.html#contact">Socials</a></li>
+                <li><a href="index.html#contact">Contact Form</a></li>
+            </ul>
+        </div>
+        <div class="footer-iconTop">
+            <a href="poster.html"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+        <div class="copyright">
+            <p>Copyright © nicholas leong.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

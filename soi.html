@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOI Learning Portal</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.6.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.6.2/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+    <!-- Navbar Section -->
+    <div class="header">
+        <nav class="navbar navbar-expand-sm sticky-top">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/Logo.png" alt="logo" style="width:100px;" class="logo">
+            </a>
+            <div class="nav-items" style="display: none;">
+                <a class="nav-item active nav-mobile-item" href="index.html#home"><i class='bx bx-home'></i> Home</a>
+                <a class="nav-item nav-mobile-item" href="index.html#about"><i class='bx bx-user'></i> About Me</a>
+                <!-- Portfolio Dropdown -->
+                <div class="dropdown">
+                    <a class="nav-item portfolio-trigger nav-mobile-item" href="#"><i class='bx bx-envelope'></i>
+                        Portfolio</a>
+                    <div class="dropdown-content">
+                        <a href="design.html">Design</a>
+                        <a href="development.html">Development</a>
+                        <a href="VR.html">VR</a>
+                    </div>
+                </div>
+                <a class="nav-item nav-mobile-item" href="index.html#contact"><i class='bx bx-phone'></i> Contact</a>
+            </div>
+            <div class="nav-item hamburger"><i class='bx bx-menu'></i></div>
+        </nav>
+    </div>
+
+    <div class="portfolio-iconTop">
+        <a href="development.html"><i class='bx bx-left-arrow-alt'></i></a>
+    </div>
+
+
+    <section class="video">
+        <video autoplay muted loop>
+            <source src="images/soi.mp4" type="video/mp4">
+        </video>
+    </section>
+
+    <!-- Overlay Container -->
+    <div id="imageOverlay" class="overlay">
+        <span class="close-btn" onclick="closeOverlay()">&times;</span>
+        <img id="expandedImage" class="expanded-image">
+    </div>
+
+    <section class="works">
+        <div class="content-container">
+            <div class="images-container">
+                <h1>Web-Pages - Click to expand -</h1>
+                <br>
+                <a href="javascript:void(0);" onclick="expandImage('images/soi1.png')">
+                    <img src="images/soi1.png" alt="soi1" style="width: 350px;">
+                </a>
+                <br><br>
+                <a href="javascript:void(0);" onclick="expandImage('images/soi2.png')">
+                    <img src="images/soi2.png" alt="soi2" style="width: 350px;">
+                </a>
+                <br><br>
+                <a href="javascript:void(0);" onclick="expandImage('images/soi3.png')">
+                    <img src="images/soi3.png" alt="soi3" style="width: 350px;">
+                </a>
+            </div>
+            <br>
+            <div class="description">
+                <h2>SOI Learning Portal</h2>
+                <p>
+                    The SOI Learning Portal is a dynamic and feature-rich website designed to enhance the user
+                    experience in online education. The portal offers a variety of courses, including PHP, React, iOS,
+                    Python, JavaScript, HTML, CSS, and Java.
+                    <br><br>
+                    Key features include a dropdown menu for course selection, autocomplete functionality for the search
+                    box, and a notifications dropdown displaying both read and unread messages. The portal also
+                    incorporates a toggle feature indicating online/offline status, a tooltip for bookmarking cards, and
+                    a bookmark icon that adds selected cards to an Offcanvas body.
+                    <br><br>
+                    Additionally, the home page boasts a carousel feature for displaying course cards, ensuring a
+                    visually engaging experience for users. The design prioritizes responsiveness, adapting seamlessly
+                    to various screen sizes for optimal usability. As the SOI Learning Portal progresses, these
+                    front-end enhancements will contribute to a comprehensive and user-friendly educational platform.
+                </p>
+                <br>
+                <h3>Color Scheme</h3>
+                <p>
+                    <span class="colorBox" style="background:orange;" data-color="orange"></span>
+                    <span class="colorBox" style="background:#efefef;" data-color="#EFEFEF"></span>
+                    <span class="colorBox" style="background:#333333;" data-color="#333333"></span>
+                    <span class="colorBox" style="background:#F0F0F0;" data-color="#F0F0F0"></span><br>
+                </p>
+                <br>
+                <a href="https://nicholas-nilz.github.io/nicholas-nilz.L07-PS/" class="btn">Go to
+                    Prototype</a>
+            </div>
+        </div>
+    </section>
+
+   <!-- Footer Section -->
+   <footer class="footer">
+    <div class="footer-content">
+        <div class="logo-container">
+            <img src="images/Logo.png" alt="logo" style="width:100px;">
+        </div>
+        <div class="social-section">
+            <h4 class="social-text">Socials:</h4>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/nilplayz/?hl=en"><i class='bx bxl-instagram'></i></a>
+                <a href="https://web.telegram.org/a/#nniilzz"><i class='bx bxl-telegram'></i></a>
+                <a href="https://api.whatsapp.com/send/?phone=%2B90716235&text&type=phone_number&app_absent=0"><i
+                        class='bx bxl-whatsapp'></i></a>
+                <a href="https://mail.google.com/mail/u/0/?hl=en#inbox?compose=new"><i
+                        class='bx bx-envelope'></i></a>
+                <a href="#"><i class='bx bxl-linkedin'></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-content">
+        <h4>Home</h4>
+        <ul>
+            <li><a href="index.html#home">Intro</a></li>
+        </ul>
+    </div>
+    <div class="footer-content">
+        <h4>About Me</h4>
+        <ul>
+            <li><a href="index.html#about">My Life</a></li>
+        </ul>
+    </div>
+    <div class="footer-content">
+        <h4>Portfolio</h4>
+        <ul>
+            <li><a href="design.html">Design</a></li>
+            <li><a href="development.html">Development</a></li>
+            <li><a href="vr.html">Virtual Reality</a></li>
+        </ul>
+    </div>
+    <div class="footer-content">
+        <h4>Contact</h4>
+        <ul>
+            <li><a href="index.html#contact">Socials</a></li>
+            <li><a href="index.html#contact">Contact Form</a></li>
+        </ul>
+    </div>
+    <div class="footer-iconTop">
+        <a href="sois.html"><i class='bx bx-up-arrow-alt'></i></a>
+    </div>
+    <div class="copyright">
+        <p>Copyright © nicholas leong.</p>
+    </div>
+</footer>
+</body>
+
+</html>
